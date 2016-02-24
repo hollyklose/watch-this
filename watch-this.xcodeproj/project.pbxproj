@@ -13,17 +13,27 @@
 		DAFFE5111C7CC72D00046218 /* watch_this.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAFFE50F1C7CC72D00046218 /* watch_this.xcdatamodeld */; };
 		DAFFE5131C7CC72D00046218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFFE5121C7CC72D00046218 /* Assets.xcassets */; };
 		DAFFE5161C7CC72D00046218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFFE5141C7CC72D00046218 /* LaunchScreen.storyboard */; };
+		DAFFE53F1C7CE70F00046218 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFFE53E1C7CE70F00046218 /* PostCell.swift */; };
+		DAFFE5431C7D053800046218 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFFE5411C7D053800046218 /* Movie.swift */; };
+		DAFFE5481C7D2D1800046218 /* AddMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFFE5471C7D2D1800046218 /* AddMovieVC.swift */; };
+		DAFFE54C1C7E0E1600046218 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFFE54B1C7E0E1600046218 /* Movie+CoreDataProperties.swift */; };
+		DAFFE54E1C7E20EB00046218 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFFE54D1C7E20EB00046218 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DAFFE5051C7CC72D00046218 /* watch-this.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watch-this.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFFE5081C7CC72D00046218 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DAFFE50A1C7CC72D00046218 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAFFE50A1C7CC72D00046218 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "watch-this/ViewController.swift"; sourceTree = "<group>"; };
 		DAFFE50D1C7CC72D00046218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAFFE5101C7CC72D00046218 /* watch_this.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = watch_this.xcdatamodel; sourceTree = "<group>"; };
 		DAFFE5121C7CC72D00046218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAFFE5151C7CC72D00046218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAFFE5171C7CC72D00046218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFFE53E1C7CE70F00046218 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostCell.swift; path = "watch-this/PostCell.swift"; sourceTree = "<group>"; };
+		DAFFE5411C7D053800046218 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		DAFFE5471C7D2D1800046218 /* AddMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieVC.swift; sourceTree = "<group>"; };
+		DAFFE54B1C7E0E1600046218 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DAFFE54D1C7E20EB00046218 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,9 @@
 		DAFFE4FC1C7CC72D00046218 = {
 			isa = PBXGroup;
 			children = (
+				DAFFE5461C7D124900046218 /* Controller */,
+				DAFFE5451C7D124100046218 /* View */,
+				DAFFE5441C7D123A00046218 /* Model */,
 				DAFFE5071C7CC72D00046218 /* watch-this */,
 				DAFFE5061C7CC72D00046218 /* Products */,
 			);
@@ -57,14 +70,40 @@
 			isa = PBXGroup;
 			children = (
 				DAFFE5081C7CC72D00046218 /* AppDelegate.swift */,
-				DAFFE50A1C7CC72D00046218 /* ViewController.swift */,
-				DAFFE50C1C7CC72D00046218 /* Main.storyboard */,
 				DAFFE5121C7CC72D00046218 /* Assets.xcassets */,
 				DAFFE5141C7CC72D00046218 /* LaunchScreen.storyboard */,
 				DAFFE5171C7CC72D00046218 /* Info.plist */,
-				DAFFE50F1C7CC72D00046218 /* watch_this.xcdatamodeld */,
 			);
 			path = "watch-this";
+			sourceTree = "<group>";
+		};
+		DAFFE5441C7D123A00046218 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DAFFE54B1C7E0E1600046218 /* Movie+CoreDataProperties.swift */,
+				DAFFE5411C7D053800046218 /* Movie.swift */,
+				DAFFE50F1C7CC72D00046218 /* watch_this.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DAFFE5451C7D124100046218 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DAFFE50C1C7CC72D00046218 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DAFFE5461C7D124900046218 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DAFFE50A1C7CC72D00046218 /* ViewController.swift */,
+				DAFFE53E1C7CE70F00046218 /* PostCell.swift */,
+				DAFFE5471C7D2D1800046218 /* AddMovieVC.swift */,
+				DAFFE54D1C7E20EB00046218 /* DetailVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +179,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAFFE50B1C7CC72D00046218 /* ViewController.swift in Sources */,
+				DAFFE5431C7D053800046218 /* Movie.swift in Sources */,
 				DAFFE5111C7CC72D00046218 /* watch_this.xcdatamodeld in Sources */,
+				DAFFE5481C7D2D1800046218 /* AddMovieVC.swift in Sources */,
 				DAFFE5091C7CC72D00046218 /* AppDelegate.swift in Sources */,
+				DAFFE54E1C7E20EB00046218 /* DetailVC.swift in Sources */,
+				DAFFE54C1C7E0E1600046218 /* Movie+CoreDataProperties.swift in Sources */,
+				DAFFE53F1C7CE70F00046218 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +198,7 @@
 				DAFFE50D1C7CC72D00046218 /* Base */,
 			);
 			name = Main.storyboard;
+			path = "watch-this";
 			sourceTree = "<group>";
 		};
 		DAFFE5141C7CC72D00046218 /* LaunchScreen.storyboard */ = {
@@ -301,7 +346,8 @@
 				DAFFE5101C7CC72D00046218 /* watch_this.xcdatamodel */,
 			);
 			currentVersion = DAFFE5101C7CC72D00046218 /* watch_this.xcdatamodel */;
-			path = watch_this.xcdatamodeld;
+			name = watch_this.xcdatamodeld;
+			path = "watch-this/watch_this.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
